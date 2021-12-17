@@ -5,5 +5,5 @@ function searchalgorithm(){
 }
 
 function displayData(d){
-    document.getElementById("translate").innerHTML = d.kamu;
+    document.getElementById("translate").innerHTML = d.translate.kamu;
 }
