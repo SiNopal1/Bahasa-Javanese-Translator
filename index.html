@@ -7,23 +7,31 @@
     <title>Indonesia ke Krama Alus</title>
     <link rel="stylesheet" href="bootstrap-dark.css">
     <style>
-        .padding {
+        .padding-1 {
             padding-top: 20px;
             padding-right: 80px;
-            padding-bottom: 20px;
+            padding-bottom: 0px;
+            padding-left: 80px;
+        }
+
+        .padding-2 {
+            padding-top: -10px;
+            padding-right: 80px;
+            padding-bottom: 10px;
             padding-left: 80px;
         }
     </style>
 </head>
 
 <body>
-    <div class="input-group mb-3 padding">
+    <div class="input-group mb-3 padding-1">
         <span class="input-group-text" id="inputGroup-sizing-default">Kata Indonesia</span>
         <input type="text" class="form-control" aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default" id="typed">
         <input type="submit" value="Search" onclick="searchalgorithm()">
     </div>
-    <div id="translate"></div>
+    <div id="penjelasan" class="padding-2"></div>
+    <div id="translate" class="padding-2"></div>
     <script src="algorithm.js"></script>
 </body>
 

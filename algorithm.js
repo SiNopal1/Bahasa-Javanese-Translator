@@ -1,9 +1,12 @@
 function searchalgorithm(){
+    var kata = document.getElementById("typed").value;
+    document.getElementById("penjelasan").innerHTML = "Mencari arti dari <span>" + kata + "</span>";
     fetch("database.json")
         .then((response) => response.json())
         .then((data) => displayData(data));
 }
 
 function displayData(d){
-    document.getElementById("translate").innerHTML = d.translate.kamu;
+    console.log("Hi!")
+    document.getElementById("translate").innerHTML = d;
 }
