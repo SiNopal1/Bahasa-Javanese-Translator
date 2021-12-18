@@ -9,8 +9,8 @@ function searchalgorithm(){
     
 }
 
-function displayData(d){
-    var database = JSON.parse(d);
+function displayData(data){
+    var d = JSON.parse(data);
     console.log("Hi!")
     document.getElementById("translate").innerHTML = d;
 }
